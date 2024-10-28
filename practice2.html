@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font and Border Control</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Customize Paragraph Style</h2>
+
+    <!-- Form for RGB and Border Width Inputs -->
+    <div class="controls">
+        <label>Font Color (RGB): </label>
+        <input type="number" id="fontR" placeholder="R" min="0" max="255">
+        <input type="number" id="fontG" placeholder="G" min="0" max="255">
+        <input type="number" id="fontB" placeholder="B" min="0" max="255">
+        
+        <br><label>Border Color (RGB): </label>
+        <input type="number" id="borderR" placeholder="R" min="0" max="255">
+        <input type="number" id="borderG" placeholder="G" min="0" max="255">
+        <input type="number" id="borderB" placeholder="B" min="0" max="255">
+        
+        <br><label>Border Width (px): </label>
+        <input type="number" id="borderWidth" placeholder="Width" min="1" max="20">
+
+        <button onclick="applyStyles()">Apply Styles</button>
+    </div>
+
+    <!-- Paragraph with Dummy Text -->
+    <p id="customParagraph">This is a customizable paragraph. Use the inputs above to change the font color, border color, and border width.
+        the future of American semiconductor manufacturing starts in Oregon, which is home to Intel’s innovation hub for leading-edge semiconductor research,
+         technology development and manufacturing. Intel is planning a multibillion-dollar expansion and modernization of our facilities in Oregon that keeps 
+         us on track to process technology leadership by 2025.
+    </p>
+</div>
+
+<script src="script1.js"></script>
+</body>
+</html>
